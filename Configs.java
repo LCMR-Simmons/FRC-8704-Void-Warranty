@@ -54,38 +54,3 @@ public final class Configs {
                     .positionWrappingInputRange(0, turningFactor);
         }
     }
-/*public static final class Lift {
-        public static final SparkMaxConfig leaderConfig = new SparkMaxConfig();
-        public static final SparkMaxConfig followerConfig = new SparkMaxConfig();
-
-        static {
-                leaderConfig
-                    .idleMode(IdleMode.kBrake)
-                    .smartCurrentLimit(40);
-                leaderConfig.closedLoop
-                    .feedbackSensor(FeedbackSensor.kPrimaryEncoder)
-                    .pid(0.1, 0, 0)
-                    .outputRange(-1, 1);
-    
-                followerConfig
-                    .idleMode(IdleMode.kBrake)
-                    .smartCurrentLimit(40);
-        }
-}
-        
-public static final class CoralDropper {
-        public static final SparkMaxConfig leftConfig = new SparkMaxConfig();
-        public static final SparkMaxConfig rightConfig = new SparkMaxConfig();
-    
-        static {
-            leftConfig
-                .idleMode(IdleMode.kBrake)
-                .smartCurrentLimit(CoralDropperConstants.kCurrentLimit);
-    
-            rightConfig
-                .idleMode(IdleMode.kBrake)
-                .smartCurrentLimit(CoralDropperConstants.kCurrentLimit);
-        }
-    }
-        */
-}
